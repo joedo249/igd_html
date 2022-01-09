@@ -90,7 +90,7 @@ nav a:hover {
 }
 
 .gestZone {
-  margin: 5px;
+  margin: 10px;
   text-align: justify;
 }
 
@@ -126,4 +126,56 @@ footer {
   color: var(--main-bg-color);
   font-size: 1rem;
   padding: 5px;
+}
+
+/* No cookies! */
+.modal {
+  display: none;
+  position: fixed;
+}
+
+.modal-content {
+  margin-left: 10%;
+  width: 70%;
+  max-width: 180px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  border-radius: 20px;
+  padding: 30px;
+}
+#close {
+  width: 30px;
+  font-size: 20px;
+  color: #c0c5cb;
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#img-cookie {
+  width: 80px;
+}
+
+p {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+#accept {
+  background-color: brown;
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+  padding: 14px;
+  font-size: 16px;
+  color: white;
+  box-shadow: 0px 6px 18px -5px rgba(237, 103, 85, 1);
+  cursor: pointer;
 }

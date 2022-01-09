@@ -41,8 +41,29 @@
       </nav>
 
       <div id="image"></div>
-      <!-- <script src="./js/appendDiv.js"></script> -->
       <script src="./js/season.js"></script>
+
+      <!-- https://codepen.io/imilenig/pen/wvWjWpR -->
+      <!-- <div class="container">
+        <div class="cookiesContent" id="cookiesPopup">
+          <button class="close">✖</button>
+          <img src="https://cdn-icons.flaticon.com/png/512/3200/premium/3200506.png?token=exp=1634984321~hmac=ba9aa75696b0b62de7e42e5f38a970c7" alt="cookies-img" />
+          <p>We use cookies for improving user experience, analytics and marketing.</p>
+          <button class="accept">That's fine!</button>
+        </div>
+      </div> -->
+
+      <div class="modal">
+        <div class="modal-content">
+          <button onclick="hideModal()" class="close-btn" id="close">X</button>
+          <img src="./img/cookie_1.jpg" id="img-cookie" alt="cookie" />
+          <p>We don't use any cookie!</p>
+          <button onclick="hideModal()" class="close-btn" id="accept">
+            That's fine!
+          </button>
+        </div>
+      </div>
+      <script src="./js/cookie.js"></script>
 
       <div class="gestZone">
         <section>
@@ -67,8 +88,9 @@
             </p>
             <h2>Disponibilité et souplesse</h2>
             <p>
-              Le choix de limter notre pratique à certains aspects du droit
-              nous permet d'offrir une prestation efficace et ainsi d'en optimiser le coût.
+              Le choix de limiter notre pratique à certains aspects du droit nous
+              permet d'offrir une prestation efficace et ainsi d'en optimiser le
+              coût.
             </p>
           </article>
         </section>

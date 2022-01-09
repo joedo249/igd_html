@@ -1,12 +1,11 @@
 // const date = new Date();
 // const month = date.getMonth();
-// console.log(month);
 
-let month = 1;
+let month = 10;
 
 switch (month) {
   case 1:
-    season = 'santaclaus';
+    season = 'snowman';
     changeImage();
     break;  
   case 2:

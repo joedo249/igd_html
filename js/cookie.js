@@ -1,25 +1,23 @@
-const modal = document.querySelector('.modal');
+const modalCookie = document.querySelector('.modal-cookie');
 
-// When the user clicks on the button, open the modal
-function displayModal() {
-  modal.style.display = 'block';
-}
-
-// The modal is displayed 3 seconds after page load
+// The .modal-cookie is displayed 3 seconds after first page load
 window.onload = function () {
-  setTimeout(function () {
-    modal.style.display = 'block';
-  }, 3000);
+  if (!('cookieHasRunBefore' in sessionStorage)) {
+    setTimeout(function () {
+      modalCookie.style.display = 'block';
+    }, 3000);
+    sessionStorage.setItem('cookieHasRunBefore', true);
+  }
 };
 
-// When the user clicks on X or the button close the modal
+// Close .modal-cookie when the user clicks on X or the button
 function hideModal() {
-  modal.style.display = 'none';
+  modalCookie.style.display = 'none';
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// Close .modal-cookie when the user clicks anywhere outside of the modal-cookie
 window.onclick = function (event) {
-  if (event.target = modal) {
-    modal.style.display = 'none';
+  if ((event.target = modalCookie)) {
+    modalCookie.style.display = 'none';
   }
 };

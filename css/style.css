@@ -129,15 +129,16 @@ footer {
 }
 
 /* No cookies! */
-.modal {
+.modal-cookie {
   display: none;
   position: fixed;
 }
 
 .modal-content {
-  margin-left: 10%;
+  margin-top: 10px;
+  margin-left: 15px;
   width: 70%;
-  max-width: 180px;
+  max-width: 200px;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -155,7 +156,7 @@ footer {
   align-self: flex-end;
   background-color: transparent;
   border: none;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   cursor: pointer;
 }
 
